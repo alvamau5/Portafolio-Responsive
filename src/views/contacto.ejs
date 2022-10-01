@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <%= title%>
+    </title>
+    <%- include('partials/head')%>
+</head>
+
+<body>
+    <%- include('partials/navbar') %>
+        <section id="contacto">
+            <div class="container">
+                <form action="">
+                    <h2>Contacto</h2>
+                    <h4>Estoy disponible para trabajos independientes, colaboraciones o simplemente codear para
+                        convivir. Si
+                        quiere ponerte en contacto conmigo, rellena el siguiente formulario.</h4>
+                    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+                    <input class="controls" type="text" name="apellidos" id="apellidos"
+                        placeholder="Ingrese su Apellido">
+                    <input class="controls" type="email" pattern=".+@goblex\.com" size="720" inputmode="email"
+                        autocomplete="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+                    <textarea class="mensagge" type="text" id="mensaje" placeholder="Escriba su mensaje"></textarea>
+
+                    <button class="send">
+                        <span class="text">Enviar</span>
+                        <i class="ri-check-line icon"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+        <%- include('partials/footer')%>
+</body>
+
+</html>

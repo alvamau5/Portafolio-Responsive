@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= title%></title>
+    <%- include('partials/head')%>
+  </head>
+
+  <body>
+    <%- include('partials/navbar') %>
+
+    <section id="mis-proyectos">
+      <div class="container">
+        <h2>Mis Proyectos</h2>
+        <div class="proyectos">
+          <div class="tarjetas">
+            <h3>Sistema de Vacacione</h3>
+            <p>
+              Programa que calcula los días de vacaciones que el trabajador
+              recibirar por el tiempo que lleva en la emprea. Aplicacion de
+              escritorio hecha en el lenguaje Java 1.8 usando la clase de
+              interfaz.
+            </p>
+            <a
+              target="_blank"
+              href="https://github.com/alvamau5/Proyecto-Vacaciones"
+              ><button>+ Info</button></a
+            >
+          </div>
+          <div class="tarjetas">
+            <h3>App List</h3>
+            <p>
+              Pequeña aplicacion de listado de tareas que permirte editar y
+              eliminar los elementos generados. Usando tecnologías como Html,
+              Css y JavaScirpt (vanilla), con implementacion de LocalSotrage.
+            </p>
+            <a
+              target="_blank"
+              href="https://alvamau5.github.io/list-app.github.io/"
+              ><button>+ Info</button></a
+            >
+          </div>
+          <div class="tarjetas">
+            <h3>Tienda Online</h3>
+            <p>
+              Tienda E-comers sencilla simulando ser de una zapateria, con
+              categorias seleccinadas por botones dinamicos con JavaScirpt, asi
+              como integracion de nuevas categorias. Tecnologías implementadas
+              Html, Css y JavaScirpt (vanilla)
+            </p>
+            <a target="_blank" href="https://alvamau5.github.io/zapateria-geos/"
+              ><button>+ Info</button>
+            </a>
+          </div>
+          <div class="tarjetas">
+            <h3>Product App</h3>
+            <p>
+              Aplicacion generadora de inventario en la cual se agrega el
+              articulo, su precio y modelo del año del mismo. Tecnologias
+              empleadas en esta aplicacion; Html, Css con Bootsrap y JavaScirpt
+              (vanilla)
+            </p>
+            <a target="_blank" href="https://alvamau5.github.io/product-app/"
+              ><button>+ Info</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('partials/footer')%>
+  </body>
+</html>

@@ -1,0 +1,334 @@
+body {
+  background-color: #202020;
+  color: white;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: dodgerblue;
+}
+
+button:hover {
+  background-color: deepskyblue;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("/img/coder.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 90vh;
+}
+
+#hero h1 {
+  color: white;
+}
+
+#hero button {
+  font-size: 1.75em;
+}
+
+#hero .saludo {
+  display: block;
+  font-family: monospace;
+  font-size: 2.8em;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 30ch;
+  color: white;
+
+  animation: typing 4s steps(30), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+#sobre-mi .container {
+  align-items: center;
+  text-align: center;
+  padding: 200px 12px;
+  background-color: #202020;
+  color: white;
+  height: 90vh;
+}
+
+#mis-proyectos {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+#mis-proyectos .container {
+  text-align: center;
+  height: 90vh;
+  padding: 40px 12px;
+}
+
+#mis-proyectos h2 {
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#mis-proyectos p {
+  display: none;
+}
+
+#mis-proyectos .tarjetas {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+.tarjetas:first-child {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img/Inicio.jpg");
+}
+
+.tarjetas:nth-child(2) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img/app-list.jpeg");
+}
+
+.tarjetas:nth-child(3) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img/Zapateria-Geos.jpg");
+}
+
+.tarjetas:nth-child(4) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img/Productapp.jpg");
+}
+
+#contacto .container {
+  display: flex;
+  text-align: center;
+  padding: 5px 12px;
+  background-position: center center;
+  justify-content: center;
+  height: 90vh;
+}
+
+form {
+  width: 550px;
+  background: #24303c;
+  padding: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 4px;
+  font-family: "calibri";
+  color: white;
+  box-shadow: 7px 13px 37px rgb(44, 44, 44);
+}
+
+#contacto h2 {
+  font-size: 40px;
+  margin: auto;
+}
+
+#contacto h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.controls {
+  width: 90%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: "calibri";
+  font-size: 18px;
+  color: white;
+}
+
+.mensagge {
+  width: 90%;
+  background: #24303c;
+  padding: 05px 15px 50px 15px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #1f53c5;
+  font-family: "calibri";
+  font-size: 18px;
+  color: white;
+}
+
+footer {
+  background-color: rgb(230, 230, 230);
+}
+
+footer p {
+  margin: 0;
+  padding: 12px;
+  color: rgb(100, 100, 100);
+}
+
+footer .container {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (min-width: 850px) {
+  #hero h1 {
+    font-size: 5em;
+  }
+
+  #sobre-mi .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #sobre-mi .texto {
+    width: 50%;
+    max-width: 500px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #sobre-mi h2 {
+    margin-top: 0px;
+  }
+
+  #sobre-mi .img-container {
+    background-image: url("/img/yo.jpg");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5%;
+    height: 400px;
+    width: 300px;
+  }
+
+  #mis-proyectos .proyectos {
+    display: flex;
+    justify-content: center;
+  }
+
+  #mis-proyectos p {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  #mis-proyectos h2 {
+    font-size: 4em;
+  }
+
+  #mis-proyectos h3 {
+    margin-top: 0;
+  }
+
+  #mis-proyectos .tarjetas {
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-color: rgba(50, 50, 50, 1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .tarjetas:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("img/Inicio.jpg");
+  }
+
+  .tarjetas:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("img/app-list.jpeg");
+  }
+
+  .tarjetas:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("img/Zapateria-Geos.jpg");
+  }
+
+  .tarjetas:nth-child(4) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("img/Productapp.jpg");
+  }
+
+  #contacto .container {
+    text-align: center;
+    margin: auto;
+    padding: 5px 0;
+  }
+
+  footer .container {
+    justify-content: flex-end;
+  }
+}
